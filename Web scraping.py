@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-word = input("Enter a word to search for: ")
+word = input("Enter a word: ")
 url = f"https://www.dictionary.com/browse/{word}"
 response = requests.get(url)
 soup = BeautifulSoup(response.content, "html.parser")
